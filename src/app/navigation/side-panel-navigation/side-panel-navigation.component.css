@@ -1,0 +1,80 @@
+.side-panel-navigation-container {
+    width: 100%;
+    height: var(--fullViewHeight);
+    background-color: var(--darkGrey);
+    color: #fff;
+    padding-top: calc(2 * var(--extraLargeSpacing));
+}
+
+.side-panel-navigation-container .logo-container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin-bottom: calc(1.5 * var(--extraLargeSpacing));
+}
+
+.side-panel-navigation-container .logo-container h3 {
+    font-family: quicksand-regular;
+    font-size: calc(2 * var(--mediumFont));
+    font-weight: var(--lightWeight);
+    letter-spacing: var(--smallLetterSpacing);
+}
+
+.side-panel-navigation-container .logo-container .logo-svg-container {
+    width: 190px;
+    overflow: hidden;
+}
+
+.side-panel-navigation-container .logo-container .logo {
+    width: 250px;
+}
+
+.side-panel-navigation-container .menu-section {
+    margin: var(--largeSpacing);
+}
+
+.side-panel-navigation-container .menu-section ul {
+    margin-top: var(--largeSpacing) !important;
+}
+
+.side-panel-navigation-container .menu-section li {
+    height: var(--mediumDimension);
+    margin: var(--extraSmallSpacing) 0px var(--extraSmallSpacing) 0px;
+    border: 1px solid rgba(0,0,0,0);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.side-panel-navigation-container .menu-section li.active {
+    color: var(--white);
+    background-color: var(--primaryAccentColor);
+}
+
+.side-panel-navigation-container .menu-section li:not(li.active):hover {
+    background-color: rgba(21,21,23,0.4)
+}
+
+.side-panel-navigation-container .menu-section li span {
+    margin-top: calc(var(--mediumDimension) / 4);
+    margin-left: var(--mediumSpacing);
+    display: block;
+}
+
+.side-panel-navigation-container .menu-section .section-title {
+    font-size: var(--smallFont);
+    letter-spacing: var(--smallLetterSpacing);
+    color: var(--mediumGrey);
+    font-weight: var(--lightWeight);
+    cursor: default;
+}
+
+.side-panel-navigation-container .menu-section .menu-item-title {
+    font-size: var(--mediumFont);
+    letter-spacing: var(--smallLetterSpacing);
+    color: var(--mediumGrey);
+    font-weight: var(--mediumWeight);
+}
+
+.side-panel-navigation-container .menu-section li.active .menu-item-title {
+    color: var(--white);
+}

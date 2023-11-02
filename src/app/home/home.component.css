@@ -1,0 +1,9 @@
+.overview-wrapper {
+    width: 35%;
+    padding: calc(1.5 * var(--largeSpacing));
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}

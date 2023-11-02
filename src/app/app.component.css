@@ -1,0 +1,11 @@
+.page-wrapper {
+    display: flex;
+}
+
+.side-panel-wrapper {
+    width: 15%;
+}
+
+.body {
+    width: 80%;
+}

@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-bg">
+        <div class="card-header">
+            <img [src]="getBankLogo(card.bank)" [ngClass]="getBankLogoClass(card.bank) + ' bank-logo'" />
+            <img [src]="getProviderLogo(card.provider)" [ngClass]="getProviderClass(card.provider) + ' card-provider-logo'" />
+        </div>
+        <div class="card-tech">
+            <img src="assets/chip.svg" class="card-chip" />
+            <img src="assets/contactless.svg" class="card-nfc" *ngIf="card.nfcEnabled" />
+        </div>
+        <div class="card-details">
+            <p class="card-number">{{ card.number }}</p>
+            <p class="expiry-date">{{ card.expiryDate.toString().padStart(2, '0') }}/{{ card.expiryMonth.toString().padStart(2, '0') }}</p>
+        </div>
+    </div>
+</div>

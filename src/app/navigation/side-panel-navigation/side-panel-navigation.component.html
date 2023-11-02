@@ -1,0 +1,16 @@
+<div class="side-panel-navigation-container">
+    <div class="logo-container">
+        <div class="logo-svg-container">
+            <img src="assets/monkey_logo_original.svg" class="logo" />
+        </div>
+        <h3>Monkey</h3>
+    </div>
+    <div class="menu-section" *ngFor="let section of menu; index as sectionIndex">
+        <p class="section-title">{{ section.title }}</p>
+        <ul>
+            <li *ngFor="let item of section.menuItems; index as itemIndex" [ngClass]="item.isActive ? 'active' : ''" (click)="navigateToPage(item.link, sectionIndex, itemIndex)">
+                <span class="menu-item-title">{{ item.title }}</span>
+            </li>
+        </ul>
+    </div>
+</div>

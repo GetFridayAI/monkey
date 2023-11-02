@@ -1,0 +1,101 @@
+.card {
+    width: 85%;
+    height: calc(5 * var(--largeDimension));
+    border-radius: 25px;
+    border: none;
+    background-color: #e32622;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    left: 5%;
+}
+
+.card-bg {
+    border-radius: 15px;
+    background: radial-gradient(
+        100% 100% at 50% 50%,
+        rgba(21, 21, 22, 0.93) 0%,
+        rgba(0, 0, 0, 0.87) 100%
+    );
+    background-blend-mode: ;
+    backdrop-filter: blur(42px);
+    -webkit-backdrop-filter: blur(42px);
+    width: 100%;
+    height: calc(5 * var(--largeDimension));
+    border: 2px solid rgba(21, 21, 22, 0.9);
+}
+
+.card-header {
+    margin-top: var(--largeSpacing);
+    margin-right: calc(2 * var(--largeSpacing)) !important;
+    margin-left: calc(2 * var(--largeSpacing)) !important;
+    display: flex;
+    align-items: center;
+}
+
+.bank-logo {
+    width: calc(2 * var(--mediumDimension));
+}
+
+.bank-logo.icici {
+    transform: scale(2);
+    width: calc(1 * var(--mediumDimension));
+}
+
+.bank-logo.kotak {
+    width: calc(1.5 * var(--mediumDimension));
+}
+
+.bank-logo.union {
+    width: calc(1 * var(--mediumDimension));
+    transform: scale(3);
+    margin-left: var(--smallDimension);
+}
+
+.card-provider-logo {
+    float: right;
+    width: calc(4 * var(--largeSpacing));
+    margin-left: auto;
+}
+
+.card-provider-logo.visa {
+    width: calc(4 * var(--largeSpacing));
+}
+
+.card-provider-logo.mastercard {
+    width: calc(4 * var(--largeSpacing));
+    transform: scale(1.5);
+}
+
+.card-tech {
+    display: flex;
+    align-items: center;
+    margin-left: calc(2 * var(--largeSpacing)) !important;
+    margin-top: var(--extraLargeSpacing);
+}
+
+.card-tech .card-chip {
+    width: var(--smallDimension);
+}
+
+.card-tech .card-nfc {
+    width: var(--extraSmallDimension);
+}
+
+.card-details {
+    margin-top: var(--largeSpacing) !important;
+    margin-left: calc(2 * var(--largeSpacing)) !important;
+}
+
+.card-number {
+    color: var(--lightGrey);
+    font-size: var(--largeFont);
+    letter-spacing: calc(2 * var(--smallLetterSpacing));
+}
+
+.expiry-date {
+    color: var(--lightGrey);
+    font-size: var(--mediumFont);
+    letter-spacing: calc(1.5 * var(--smallLetterSpacing));
+    margin-top: var(--mediumSpacing) !important;
+}

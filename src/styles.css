@@ -1,1 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    /*** Spacing Vars ***/
+    --extraSmallSpacing: 5px;
+    --smallSpacing: 10px;
+    --mediumSpacing: 15px;
+    --largeSpacing: 25px;
+    --extraLargeSpacing: 30px;
+
+    /*** Dimension Vars ***/
+    --extraSmallDimension: 30px;
+    --smallDimension: 40px;
+    --mediumDimension: 50px;
+    --largeDimension: 60px;
+    --extraLargeDimension: 70px;
+    --fullViewHeight: 100vh;
+
+    /*** Color Vars ***/
+    --mediumGrey: #939393;
+    --darkGrey: rgb(27, 27, 31);
+    --black: rgb(21, 21, 22);
+    --white: #f9f9f9;
+    --lightGrey: #c2c2c2;
+    --darkBlueGrey: rgba(8, 6, 6, 0.3);
+    --darkBlack: rgb(14, 14, 12);
+    --snowWhite: #fff;
+    --primaryAccentColor: rgb(8, 115, 97);
+
+    /*** Font Size Vars ***/
+    --smallFont: 14px;
+    --mediumFont: 16px;
+    --largeFont: 20px;
+    --extraLargeFont: 24px;
+
+    /*** Font Weight Vars ***/
+    --lightWeight: 200;
+    --mediumWeight: 350;
+    --bold: 500;
+    --extraBold: 600;
+
+    /*** Letter Spacing Vars ***/
+    --smallLetterSpacing: 1.5px;
+    --mediumLetterSpacing: 2px;
+    --largeLetterSpacing: 2.5px;
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: quicksand-regular;
+    src: url(assets/fonts/Quicksand/static/Quicksand-Regular.ttf);
+}
+
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: var(--black);
+    font-family: roboto-regular;
+    user-select: none;
+    overflow-y: hidden;
+    min-width: 2100px;
+    overflow-x: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px !important;
+}
+
+ul {
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
