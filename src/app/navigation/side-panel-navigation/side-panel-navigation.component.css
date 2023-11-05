@@ -47,7 +47,7 @@
 
 .side-panel-navigation-container .menu-section li.active {
     color: var(--white);
-    background-color: var(--primaryAccentColor);
+    background-color: var(--primaryGreenAccentColor);
 }
 
 .side-panel-navigation-container .menu-section li:not(li.active):hover {

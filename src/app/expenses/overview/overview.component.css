@@ -1,6 +1,6 @@
 .overview-card {
     width: 100%;
-    height: 400px;
+    height: calc(8 * var(--mediumDimension));
     border-radius: 15px;
     background-color: var(--darkGrey);
     display: flex;
@@ -8,8 +8,8 @@
 }
 
 .overview-card .expense-chart {
-    width: 300px !important;
-    height: 300px !important;
+    width: calc(5 * var(--largeDimension)) !important;
+    height: calc(5 * var(--largeDimension)) !important;
     margin-left: 10%;
 }
 
@@ -19,27 +19,28 @@
 }
 
 .spend-limit {
-    padding: 25px;
+    padding: var(--largeSpacing);
     background-color: var(--darkBlueGrey);
     border-radius: 15px;
-    font-size: 15px;
+    font-size: var(--mediumFont);
     cursor: pointer;
 }
 
 .current-spend{
-    padding: 25px;
+    padding: var(--largeSpacing);
     background-color: var(--darkBlueGrey);
     border-radius: 15px;
-    font-size: 15px;
+    font-size: var(--mediumFont);
     margin-top: 40px !important;
     cursor: pointer;
 }
 
 .current-spend p:nth-child(1) {
-    font-size: 45px;
+    font-size: calc(3 * var(--mediumFont));
     font-weight: var(--bold);
 }
 
 .spend-limit p:nth-child(1) {
-    font-size: 45px;
+    font-size: calc(3 * var(--mediumFont));
+    font-weight: var(--bold);
 }

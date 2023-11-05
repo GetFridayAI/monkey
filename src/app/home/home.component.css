@@ -1,6 +1,15 @@
 .overview-wrapper {
-    width: 35%;
     padding: calc(1.5 * var(--largeSpacing));
+    overflow-y: auto;
+}
+
+.overview-wrapper.medium {
+    width: 35%;
+}
+
+.overview-wrapper.large {
+    width: 50%;
+    overflow: hidden;
 }
 
 .row {

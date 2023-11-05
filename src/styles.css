@@ -20,10 +20,35 @@
     --black: rgb(21, 21, 22);
     --white: #f9f9f9;
     --lightGrey: #c2c2c2;
+    --lightCharcoalGrey: rgb(48, 48, 48);
     --darkBlueGrey: rgba(8, 6, 6, 0.3);
     --darkBlack: rgb(14, 14, 12);
     --snowWhite: #fff;
-    --primaryAccentColor: rgb(8, 115, 97);
+    --primaryGreenAccentColor: rgb(8, 115, 97);
+    --primaryOrangeAccentColor: rgb(207, 93, 70);
+
+    /*** Dropdown Color Vars ***/
+    --dropdownFontColor: var(--lightCharcoalGrey);
+    --dropdownOptionBackgroundColor: var(--lightCharcoalGrey);
+    --dropdownOptionHoverBackgroundColor: var(--darkBlueGrey);
+    --dropdownOptionHoverFontColor: var(--snowWhite);
+    --dropdownOptionSelectedBackgroundColor: var(--darkBlueGrey);
+    --dropdownOptionSelectedFontColor: var(--primaryOrangeAccentColor);
+    --dropdownOptionSelectedHoverBackgroundColor: var(--darkBlack);
+    --dropdownOptionSelectedHoverFontColor: var(--snowWhite);
+    --dropdownOptionShadowColor: var(--darkBlueGrey);
+
+    /*** Table Color Vars ***/
+    --tableHeaderBackgroundColor: var(--darkBlack);
+    --tableHeaderFontColor: var(--lightGrey);
+    --tableOddRowBackgroundColor: var(--darkGrey);
+    --tableOddRowFontColor: var(--lightGrey);
+    --tableEvenRowBackgroundColor: var(--darkBlueGrey);
+    --tableEvenRowFontColor: var(--lightGrey);
+    --tableOddRowHoverBackgroundColor: var(--darkBlack);
+    --tableOddRowHoverFontColor: var(--lightGrey);
+    --tableEvenRowHoverBackgroundColor: var(--darkBlack);
+    --tableEvenRowHoverFontColor: var(--lightGrey);
 
     /*** Font Size Vars ***/
     --smallFont: 14px;
@@ -76,4 +101,28 @@ ul {
 
 ul li {
     list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--lightGrey);
+    opacity: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--lightGrey);
+    border-radius: 40px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }

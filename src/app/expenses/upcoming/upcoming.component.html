@@ -1,0 +1,7 @@
+<div class="overview-card">
+        <div class="header">
+                <h3>Upcoming Spends</h3>
+                <select-dropdown class="filters-dropdown" [dropdownOptions]="filters" [selectedOption]="selectedFilter" (selectOption)="setTimeFilter($event)"></select-dropdown>
+        </div>
+        <app-table [headers]="expenseTableHeaders" [data]="expensesRenderData"></app-table>
+</div>

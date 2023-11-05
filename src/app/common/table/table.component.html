@@ -1,0 +1,10 @@
+<table>
+        <thead>
+                <th *ngFor="let header of headers">{{ header }}</th>
+        </thead>
+        <tbody>
+                <tr *ngFor="let row of data;">
+                        <td *ngFor="let key of keys">{{ row[key] }}</td>
+                </tr>
+        </tbody>
+</table>

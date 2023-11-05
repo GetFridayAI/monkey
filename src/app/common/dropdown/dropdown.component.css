@@ -1,0 +1,75 @@
+.dropdown-container {
+        display: grid;
+        height: calc(4 * var(--smallSpacing));
+        color: var(--dropdownFontColor);
+}
+
+.dropdown-container .selected-value {
+        grid-column: 1;
+        grid-row: 1;
+        background: var(--darkBlueGrey);
+        height: var(--extraSmallDimension);
+        border-radius: 10px;
+        padding: 10px var(--largeSpacing) 0px var(--largeSpacing);
+        cursor: pointer;
+}
+
+.dropdown-container .selected-value span {
+        min-width: calc(2 * var(--smallDimension));
+        text-overflow: ellipsis;
+        color: var(--lightGrey);
+}
+
+.dropdown-container .selected-value img {
+        width: calc(var(--smallDimension)/2);
+        float: right;
+        margin-left: var(--largeSpacing);
+}
+
+.dropdown-container .dropdown-options-background {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--dropdownOptionShadowColor);
+}
+
+.dropdown-container .options-list {
+        grid-column: 1;
+        grid-row: 1;
+        width: calc(4 * var(--smallDimension));
+        background: var(--dropdownOptionBackgroundColor);
+        z-index: 100;
+        color: var(--lightGrey);
+        cursor: pointer;
+        border-radius: 15px;
+}
+
+.dropdown-container .options-list p {
+        padding: 10px 15px 10px 15px;
+}
+
+.dropdown-container .options-list p.selected {
+        color: var(--dropdownOptionSelectedFontColor);
+        background-color: var(--dropdownOptionSelectedBackgroundColor);
+}
+
+.dropdown-container .options-list p.selected: hover {
+        color: var(--dropdownOptionSelectedHoverFontColor);
+        background-color: var(--dropdownOptionSelectedHoverBackgroundColor);
+}
+
+.dropdown-container .options-list p:nth-child(1) {
+        border-radius: 15px 15px 0px 0px;
+}
+
+.dropdown-container .options-list p:last-child {
+        border-radius: 0px 0px 15px 15px;
+}
+
+.dropdown-container .options-list p:hover {
+        background: var(--dropdownOptionHoverBackgroundColor);
+        color: var(--dropdownOptionHoverFontColor)
+}

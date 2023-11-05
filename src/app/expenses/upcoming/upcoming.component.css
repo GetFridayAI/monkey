@@ -1,0 +1,24 @@
+.overview-card {
+        height: calc(8 * var(--mediumDimension));
+        border-radius: 15px;
+        background-color: var(--darkGrey);
+        align-items: center;
+        padding: 25px;
+        overflow: hidden;
+}
+
+.overview-card .header {
+        display: flex;
+        align-items: center;
+        padding-left: calc(4 * var(--smallSpacing));
+        padding-right: calc(4 * var(--smallSpacing));
+        height: calc(4 * var(--smallSpacing));
+}
+
+.overview-card .header h3 {
+        color: var(--lightGrey);
+}
+
+.overview-card .header .filters-dropdown {
+        margin-left: auto;
+}

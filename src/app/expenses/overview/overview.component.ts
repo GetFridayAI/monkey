@@ -1,4 +1,5 @@
 import { Component, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import {Router} from "@angular/router";
 import Chart from 'chart.js/auto';
 
 @Component({
@@ -35,7 +36,7 @@ export class ExpensesOverviewComponent implements OnInit, AfterViewInit {
     data: this.data
   };
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     
@@ -49,6 +50,10 @@ export class ExpensesOverviewComponent implements OnInit, AfterViewInit {
         data: this.data
       }
     );
+  }
+
+  routeTo(route: string): void {
+    this.router.navigate([route]);
   }
 
 }

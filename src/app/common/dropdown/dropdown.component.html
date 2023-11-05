@@ -1,0 +1,10 @@
+<div class="dropdown-container">
+        <div class="selected-value" (click)="toggleDropdown(true)">
+                <span>{{ selectedOption }}</span>
+                <img src="assets/images/icons/down-arrow.svg" />
+        </div>
+        <div class="dropdown-options-background" *ngIf="isDropdownOpen" (click)="toggleDropdown(false)"></div>
+        <div [ngClass]="optionsListContainerClass" *ngIf="isDropdownOpen">
+                <p *ngFor="let option of dropdownOptions" (click)="onOptionSelect(option)" [ngClass]="option === selectedOption ? 'selected' : ''">{{ option }}</p>
+        </div>
+</div>

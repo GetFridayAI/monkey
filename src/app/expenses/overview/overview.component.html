@@ -1,11 +1,11 @@
 <div class="overview-card">
     <canvas #chartContainer class="expense-chart"></canvas>
     <div class="expense-section-breakup">
-        <div class="spend-limit">
+        <div class="spend-limit" (click)="routeTo('budget-tracker')">
             <p>{{ spendLimit }}</p>
             <p>Spend Limit</p>
         </div>
-        <div class="current-spend">
+        <div class="current-spend" (click)="routeTo('spends-tracker')">
             <p>{{ currentSpend }}</p>
             <p>Current Spend</p>
         </div>

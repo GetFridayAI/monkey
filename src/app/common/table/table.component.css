@@ -1,0 +1,56 @@
+table {
+        align-self: baseline;
+        width: 100%;
+        height: calc(6.5 * var(--mediumDimension));
+        overflow: auto;
+        display: block;
+        margin-top: var(--largeSpacing);
+}
+
+table thead {
+        width: 100%;
+        position: sticky;
+        top: 0px;
+}
+
+table thead th {
+        background-color: var(--tableHeaderBackgroundColor);
+        height: var(--extraLargeDimension);
+        color: var(--tableHeaderFontColor);
+        width: 20%;
+        letter-spacing: var(--smallLetterSpacing);
+        border: 1px solid var(--tableHeaderBackgroundColor);
+        font-weight: var(--mediumWeight);
+        font-size: var(--largeFont);
+}
+
+table thead th:nth-child(1) {
+        border-radius: var(--largeSpacing) 0px 0px 0px;
+}
+
+table thead th:last-child {
+        border-radius: 0px var(--largeSpacing) 0px 0px;
+}
+
+table tbody tr{
+        height: var(--largeDimension);
+        color: var(--tableOddRowFontColor);
+        text-align: center;
+        cursor: pointer;
+        background-color: var(--tableOddRowBackgroundColor);
+}
+
+table tbody tr:hover{
+        background-color: var(--tableOddRowHoverBackgroundColor);
+        color: var(--tableOddRowHoverFontColor);
+}
+
+table tbody tr:nth-child(even):hover{
+        background-color: var(--tableEvenRowHoverBackgroundColor);
+        color: var(--tableEvenRowHoverFontColor);
+}
+
+table tbody tr:nth-child(even) {
+        background-color: var(--tableEvenRowBackgroundColor);
+        color: var(--tableEvenRowFontColor);
+}
